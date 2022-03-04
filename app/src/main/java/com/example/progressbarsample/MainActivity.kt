@@ -2,6 +2,7 @@ package com.example.progressbarsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ProgressBar
 import com.example.progressbarsample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,6 @@ class MainActivity : AppCompatActivity() {
         binding.button01.setOnClickListener { pushButton() }
     }
     fun pushButton(){
-        binding.progressBar02
+        binding.progressBar02.visibility = ProgressBar.INVISIBLE //
     }
 }

@@ -40,20 +40,20 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBar01"
         android:layout_width="207dp"
         android:layout_height="48dp"
         app:layout_constraintStart_toStartOf="@+id/progressBar01"
         app:layout_constraintTop_toBottomOf="@+id/progressBar01" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/seekBar02"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="162dp"
         android:layout_height="55dp"
         android:max="10"
         android:progress="3"
-        app:layout_constraintStart_toStartOf="@+id/seekBar"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintStart_toStartOf="@+id/seekBar01"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar01" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
