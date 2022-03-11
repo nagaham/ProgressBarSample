@@ -8,7 +8,6 @@ import com.example.progressbarsample.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     var barprogress = 0
-    var barsecond = 0
 
     private lateinit var binding: ActivityMainBinding
 
@@ -23,14 +22,21 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonleft.setOnClickListener {
             binding.progressBar01.progress = barprogress
-            pushButtonleft()
+            pushButtonincrease()
+        }
+        binding.button03.setOnClickListener {
+            binding.progressBar01.progress = barprogress
+            pushButtondecrease()
         }
         binding.button01.setOnClickListener { pushButtonright() }
     }
     fun pushButtonright(){
         binding.progressBar02.visibility = ProgressBar.INVISIBLE
     }
-    fun pushButtonleft(){
+    fun pushButtonincrease(){
         barprogress++
+    }
+    fun pushButtondecrease(){
+        barprogress--
     }
 }
