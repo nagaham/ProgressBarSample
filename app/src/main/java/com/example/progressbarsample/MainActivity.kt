@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         binding.progressBar01.secondaryProgress = 0
 
         binding.buttonleft.setOnClickListener {
-            binding.progressBar01.progress = barprogress
             pushButtonincrease()
+            binding.progressBar01.progress = barprogress
         }
         binding.button03.setOnClickListener {
-            binding.progressBar01.progress = barprogress
             pushButtondecrease()
+            binding.progressBar01.progress = barprogress
         }
         binding.button01.setOnClickListener { pushButtonright() }
     }
