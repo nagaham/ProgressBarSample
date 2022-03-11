@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             pushButtondecrease()
             binding.progressBar01.progress = barprogress
         }
+        binding.buttonfragment.setOnClickListener { pushButtonfragment() }
         binding.button01.setOnClickListener { pushButtonright() }
     }
     fun pushButtonright(){
@@ -38,5 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
     fun pushButtondecrease(){
         barprogress--
+    }
+    fun pushButtonfragment(){
+        testFragment.newInstance("a","b")
     }
 }
